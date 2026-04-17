@@ -1,0 +1,19 @@
+{
+  "name": "mailchimp-accessibility-agent",
+  "version": "1.0.0",
+  "description": "Crawls Mailchimp and runs axe-core WCAG 2.1 AA accessibility checks on every page. Produces a visual HTML report of all violations with screenshots and affected elements.",
+  "type": "module",
+  "main": "audit.mjs",
+  "scripts": {
+    "audit": "node audit.mjs",
+    "audit:page": "node audit.mjs --page",
+    "audit:sections": "node audit.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "playwright": "^1.59.1"
+  }
+}
